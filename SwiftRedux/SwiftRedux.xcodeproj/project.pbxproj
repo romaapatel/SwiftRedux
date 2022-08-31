@@ -1,0 +1,756 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3BB36ECFCDD3781D0CD59EF4 /* Pods_SwiftRedux_SwiftReduxUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE1CFADC48A01ABF84CEB3A7 /* Pods_SwiftRedux_SwiftReduxUITests.framework */; };
+		A35114E4A1AE9F4AA155916E /* Pods_SwiftReduxTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A68F71ABF57BAD9C100B1A82 /* Pods_SwiftReduxTests.framework */; };
+		B9ADD47C9E0FF011003A374E /* Pods_SwiftRedux.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C1C47D334A4A9D868B3ADC9 /* Pods_SwiftRedux.framework */; };
+		FF129E3A28BF85A400C2B651 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF129E3928BF85A400C2B651 /* AppDelegate.swift */; };
+		FF129E3C28BF85A400C2B651 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF129E3B28BF85A400C2B651 /* SceneDelegate.swift */; };
+		FF129E3E28BF85A400C2B651 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF129E3D28BF85A400C2B651 /* ViewController.swift */; };
+		FF129E4128BF85A400C2B651 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF129E3F28BF85A400C2B651 /* Main.storyboard */; };
+		FF129E4328BF85A600C2B651 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF129E4228BF85A600C2B651 /* Assets.xcassets */; };
+		FF129E4628BF85A600C2B651 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF129E4428BF85A600C2B651 /* LaunchScreen.storyboard */; };
+		FF129E5128BF85A600C2B651 /* SwiftReduxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF129E5028BF85A600C2B651 /* SwiftReduxTests.swift */; };
+		FF129E5B28BF85A600C2B651 /* SwiftReduxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF129E5A28BF85A600C2B651 /* SwiftReduxUITests.swift */; };
+		FF129E5D28BF85A600C2B651 /* SwiftReduxUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF129E5C28BF85A600C2B651 /* SwiftReduxUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FF129E4D28BF85A600C2B651 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF129E2E28BF85A400C2B651 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF129E3528BF85A400C2B651;
+			remoteInfo = SwiftRedux;
+		};
+		FF129E5728BF85A600C2B651 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF129E2E28BF85A400C2B651 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF129E3528BF85A400C2B651;
+			remoteInfo = SwiftRedux;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2C1C47D334A4A9D868B3ADC9 /* Pods_SwiftRedux.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftRedux.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BB4FF81449D6AC500813AFC /* Pods-SwiftRedux.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftRedux.release.xcconfig"; path = "Target Support Files/Pods-SwiftRedux/Pods-SwiftRedux.release.xcconfig"; sourceTree = "<group>"; };
+		5981AF8807A47FC0C9C75048 /* Pods-SwiftRedux.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftRedux.debug.xcconfig"; path = "Target Support Files/Pods-SwiftRedux/Pods-SwiftRedux.debug.xcconfig"; sourceTree = "<group>"; };
+		64FE847622D23F56333CCE11 /* Pods-SwiftReduxTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftReduxTests.release.xcconfig"; path = "Target Support Files/Pods-SwiftReduxTests/Pods-SwiftReduxTests.release.xcconfig"; sourceTree = "<group>"; };
+		A68F71ABF57BAD9C100B1A82 /* Pods_SwiftReduxTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftReduxTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADC5BC9F2D8F824BFB55AA39 /* Pods-SwiftRedux-SwiftReduxUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftRedux-SwiftReduxUITests.release.xcconfig"; path = "Target Support Files/Pods-SwiftRedux-SwiftReduxUITests/Pods-SwiftRedux-SwiftReduxUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BE1CFADC48A01ABF84CEB3A7 /* Pods_SwiftRedux_SwiftReduxUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftRedux_SwiftReduxUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA67CAE0103030785F699FC4 /* Pods-SwiftRedux-SwiftReduxUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftRedux-SwiftReduxUITests.debug.xcconfig"; path = "Target Support Files/Pods-SwiftRedux-SwiftReduxUITests/Pods-SwiftRedux-SwiftReduxUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E7C853DC62A0AFD20BD764AB /* Pods-SwiftReduxTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftReduxTests.debug.xcconfig"; path = "Target Support Files/Pods-SwiftReduxTests/Pods-SwiftReduxTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FF129E3628BF85A400C2B651 /* SwiftRedux.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftRedux.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF129E3928BF85A400C2B651 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FF129E3B28BF85A400C2B651 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FF129E3D28BF85A400C2B651 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FF129E4028BF85A400C2B651 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FF129E4228BF85A600C2B651 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF129E4528BF85A600C2B651 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FF129E4728BF85A600C2B651 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF129E4C28BF85A600C2B651 /* SwiftReduxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftReduxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF129E5028BF85A600C2B651 /* SwiftReduxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftReduxTests.swift; sourceTree = "<group>"; };
+		FF129E5628BF85A600C2B651 /* SwiftReduxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftReduxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF129E5A28BF85A600C2B651 /* SwiftReduxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftReduxUITests.swift; sourceTree = "<group>"; };
+		FF129E5C28BF85A600C2B651 /* SwiftReduxUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftReduxUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF129E3328BF85A400C2B651 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9ADD47C9E0FF011003A374E /* Pods_SwiftRedux.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF129E4928BF85A600C2B651 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A35114E4A1AE9F4AA155916E /* Pods_SwiftReduxTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF129E5328BF85A600C2B651 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BB36ECFCDD3781D0CD59EF4 /* Pods_SwiftRedux_SwiftReduxUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		454C7444CA9462BF26C5E81B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5981AF8807A47FC0C9C75048 /* Pods-SwiftRedux.debug.xcconfig */,
+				3BB4FF81449D6AC500813AFC /* Pods-SwiftRedux.release.xcconfig */,
+				DA67CAE0103030785F699FC4 /* Pods-SwiftRedux-SwiftReduxUITests.debug.xcconfig */,
+				ADC5BC9F2D8F824BFB55AA39 /* Pods-SwiftRedux-SwiftReduxUITests.release.xcconfig */,
+				E7C853DC62A0AFD20BD764AB /* Pods-SwiftReduxTests.debug.xcconfig */,
+				64FE847622D23F56333CCE11 /* Pods-SwiftReduxTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		549134D4BA7CA7873E888311 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C1C47D334A4A9D868B3ADC9 /* Pods_SwiftRedux.framework */,
+				BE1CFADC48A01ABF84CEB3A7 /* Pods_SwiftRedux_SwiftReduxUITests.framework */,
+				A68F71ABF57BAD9C100B1A82 /* Pods_SwiftReduxTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF129E2D28BF85A400C2B651 = {
+			isa = PBXGroup;
+			children = (
+				FF129E3828BF85A400C2B651 /* SwiftRedux */,
+				FF129E4F28BF85A600C2B651 /* SwiftReduxTests */,
+				FF129E5928BF85A600C2B651 /* SwiftReduxUITests */,
+				FF129E3728BF85A400C2B651 /* Products */,
+				454C7444CA9462BF26C5E81B /* Pods */,
+				549134D4BA7CA7873E888311 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FF129E3728BF85A400C2B651 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF129E3628BF85A400C2B651 /* SwiftRedux.app */,
+				FF129E4C28BF85A600C2B651 /* SwiftReduxTests.xctest */,
+				FF129E5628BF85A600C2B651 /* SwiftReduxUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF129E3828BF85A400C2B651 /* SwiftRedux */ = {
+			isa = PBXGroup;
+			children = (
+				FF129E3928BF85A400C2B651 /* AppDelegate.swift */,
+				FF129E3B28BF85A400C2B651 /* SceneDelegate.swift */,
+				FF129E3D28BF85A400C2B651 /* ViewController.swift */,
+				FF129E3F28BF85A400C2B651 /* Main.storyboard */,
+				FF129E4228BF85A600C2B651 /* Assets.xcassets */,
+				FF129E4428BF85A600C2B651 /* LaunchScreen.storyboard */,
+				FF129E4728BF85A600C2B651 /* Info.plist */,
+			);
+			path = SwiftRedux;
+			sourceTree = "<group>";
+		};
+		FF129E4F28BF85A600C2B651 /* SwiftReduxTests */ = {
+			isa = PBXGroup;
+			children = (
+				FF129E5028BF85A600C2B651 /* SwiftReduxTests.swift */,
+			);
+			path = SwiftReduxTests;
+			sourceTree = "<group>";
+		};
+		FF129E5928BF85A600C2B651 /* SwiftReduxUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FF129E5A28BF85A600C2B651 /* SwiftReduxUITests.swift */,
+				FF129E5C28BF85A600C2B651 /* SwiftReduxUITestsLaunchTests.swift */,
+			);
+			path = SwiftReduxUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF129E3528BF85A400C2B651 /* SwiftRedux */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF129E6028BF85A600C2B651 /* Build configuration list for PBXNativeTarget "SwiftRedux" */;
+			buildPhases = (
+				54FE1B070EF19C55F8FF4061 /* [CP] Check Pods Manifest.lock */,
+				FF129E3228BF85A400C2B651 /* Sources */,
+				FF129E3328BF85A400C2B651 /* Frameworks */,
+				FF129E3428BF85A400C2B651 /* Resources */,
+				3048413D5EC4357658413B05 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftRedux;
+			productName = SwiftRedux;
+			productReference = FF129E3628BF85A400C2B651 /* SwiftRedux.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FF129E4B28BF85A600C2B651 /* SwiftReduxTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF129E6328BF85A600C2B651 /* Build configuration list for PBXNativeTarget "SwiftReduxTests" */;
+			buildPhases = (
+				34F0ABE045480C2D66A4AE7D /* [CP] Check Pods Manifest.lock */,
+				FF129E4828BF85A600C2B651 /* Sources */,
+				FF129E4928BF85A600C2B651 /* Frameworks */,
+				FF129E4A28BF85A600C2B651 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF129E4E28BF85A600C2B651 /* PBXTargetDependency */,
+			);
+			name = SwiftReduxTests;
+			productName = SwiftReduxTests;
+			productReference = FF129E4C28BF85A600C2B651 /* SwiftReduxTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FF129E5528BF85A600C2B651 /* SwiftReduxUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF129E6628BF85A600C2B651 /* Build configuration list for PBXNativeTarget "SwiftReduxUITests" */;
+			buildPhases = (
+				718D2963486EFFD61E3B39DB /* [CP] Check Pods Manifest.lock */,
+				FF129E5228BF85A600C2B651 /* Sources */,
+				FF129E5328BF85A600C2B651 /* Frameworks */,
+				FF129E5428BF85A600C2B651 /* Resources */,
+				B6E7BE72D4FB389A41430AA7 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF129E5828BF85A600C2B651 /* PBXTargetDependency */,
+			);
+			name = SwiftReduxUITests;
+			productName = SwiftReduxUITests;
+			productReference = FF129E5628BF85A600C2B651 /* SwiftReduxUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF129E2E28BF85A400C2B651 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					FF129E3528BF85A400C2B651 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					FF129E4B28BF85A600C2B651 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = FF129E3528BF85A400C2B651;
+					};
+					FF129E5528BF85A600C2B651 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = FF129E3528BF85A400C2B651;
+					};
+				};
+			};
+			buildConfigurationList = FF129E3128BF85A400C2B651 /* Build configuration list for PBXProject "SwiftRedux" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF129E2D28BF85A400C2B651;
+			productRefGroup = FF129E3728BF85A400C2B651 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF129E3528BF85A400C2B651 /* SwiftRedux */,
+				FF129E4B28BF85A600C2B651 /* SwiftReduxTests */,
+				FF129E5528BF85A600C2B651 /* SwiftReduxUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF129E3428BF85A400C2B651 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF129E4628BF85A600C2B651 /* LaunchScreen.storyboard in Resources */,
+				FF129E4328BF85A600C2B651 /* Assets.xcassets in Resources */,
+				FF129E4128BF85A400C2B651 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF129E4A28BF85A600C2B651 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF129E5428BF85A600C2B651 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3048413D5EC4357658413B05 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftRedux/Pods-SwiftRedux-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftRedux/Pods-SwiftRedux-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftRedux/Pods-SwiftRedux-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		34F0ABE045480C2D66A4AE7D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftReduxTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		54FE1B070EF19C55F8FF4061 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftRedux-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		718D2963486EFFD61E3B39DB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftRedux-SwiftReduxUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6E7BE72D4FB389A41430AA7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftRedux-SwiftReduxUITests/Pods-SwiftRedux-SwiftReduxUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftRedux-SwiftReduxUITests/Pods-SwiftRedux-SwiftReduxUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftRedux-SwiftReduxUITests/Pods-SwiftRedux-SwiftReduxUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF129E3228BF85A400C2B651 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF129E3E28BF85A400C2B651 /* ViewController.swift in Sources */,
+				FF129E3A28BF85A400C2B651 /* AppDelegate.swift in Sources */,
+				FF129E3C28BF85A400C2B651 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF129E4828BF85A600C2B651 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF129E5128BF85A600C2B651 /* SwiftReduxTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF129E5228BF85A600C2B651 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF129E5B28BF85A600C2B651 /* SwiftReduxUITests.swift in Sources */,
+				FF129E5D28BF85A600C2B651 /* SwiftReduxUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FF129E4E28BF85A600C2B651 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF129E3528BF85A400C2B651 /* SwiftRedux */;
+			targetProxy = FF129E4D28BF85A600C2B651 /* PBXContainerItemProxy */;
+		};
+		FF129E5828BF85A600C2B651 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF129E3528BF85A400C2B651 /* SwiftRedux */;
+			targetProxy = FF129E5728BF85A600C2B651 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FF129E3F28BF85A400C2B651 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF129E4028BF85A400C2B651 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FF129E4428BF85A600C2B651 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF129E4528BF85A600C2B651 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF129E5E28BF85A600C2B651 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FF129E5F28BF85A600C2B651 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF129E6128BF85A600C2B651 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5981AF8807A47FC0C9C75048 /* Pods-SwiftRedux.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftRedux/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = swiftRedux.SwiftRedux;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF129E6228BF85A600C2B651 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BB4FF81449D6AC500813AFC /* Pods-SwiftRedux.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftRedux/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = swiftRedux.SwiftRedux;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FF129E6428BF85A600C2B651 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7C853DC62A0AFD20BD764AB /* Pods-SwiftReduxTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = swiftRedux.SwiftReduxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftRedux.app/SwiftRedux";
+			};
+			name = Debug;
+		};
+		FF129E6528BF85A600C2B651 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64FE847622D23F56333CCE11 /* Pods-SwiftReduxTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = swiftRedux.SwiftReduxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftRedux.app/SwiftRedux";
+			};
+			name = Release;
+		};
+		FF129E6728BF85A600C2B651 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA67CAE0103030785F699FC4 /* Pods-SwiftRedux-SwiftReduxUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = swiftRedux.SwiftReduxUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SwiftRedux;
+			};
+			name = Debug;
+		};
+		FF129E6828BF85A600C2B651 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADC5BC9F2D8F824BFB55AA39 /* Pods-SwiftRedux-SwiftReduxUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = swiftRedux.SwiftReduxUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SwiftRedux;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF129E3128BF85A400C2B651 /* Build configuration list for PBXProject "SwiftRedux" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF129E5E28BF85A600C2B651 /* Debug */,
+				FF129E5F28BF85A600C2B651 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF129E6028BF85A600C2B651 /* Build configuration list for PBXNativeTarget "SwiftRedux" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF129E6128BF85A600C2B651 /* Debug */,
+				FF129E6228BF85A600C2B651 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF129E6328BF85A600C2B651 /* Build configuration list for PBXNativeTarget "SwiftReduxTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF129E6428BF85A600C2B651 /* Debug */,
+				FF129E6528BF85A600C2B651 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF129E6628BF85A600C2B651 /* Build configuration list for PBXNativeTarget "SwiftReduxUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF129E6728BF85A600C2B651 /* Debug */,
+				FF129E6828BF85A600C2B651 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF129E2E28BF85A400C2B651 /* Project object */;
+}

@@ -19,6 +19,9 @@
 		FF129E5128BF85A600C2B651 /* SwiftReduxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF129E5028BF85A600C2B651 /* SwiftReduxTests.swift */; };
 		FF129E5B28BF85A600C2B651 /* SwiftReduxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF129E5A28BF85A600C2B651 /* SwiftReduxUITests.swift */; };
 		FF129E5D28BF85A600C2B651 /* SwiftReduxUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF129E5C28BF85A600C2B651 /* SwiftReduxUITestsLaunchTests.swift */; };
+		FF129E6B28BF953A00C2B651 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF129E6A28BF953A00C2B651 /* State.swift */; };
+		FF129E6D28BF954100C2B651 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF129E6C28BF954100C2B651 /* Action.swift */; };
+		FF129E6F28BF955100C2B651 /* Reducers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF129E6E28BF955100C2B651 /* Reducers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +64,9 @@
 		FF129E5628BF85A600C2B651 /* SwiftReduxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftReduxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF129E5A28BF85A600C2B651 /* SwiftReduxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftReduxUITests.swift; sourceTree = "<group>"; };
 		FF129E5C28BF85A600C2B651 /* SwiftReduxUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftReduxUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FF129E6A28BF953A00C2B651 /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
+		FF129E6C28BF954100C2B651 /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		FF129E6E28BF955100C2B651 /* Reducers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reducers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +107,6 @@
 				E7C853DC62A0AFD20BD764AB /* Pods-SwiftReduxTests.debug.xcconfig */,
 				64FE847622D23F56333CCE11 /* Pods-SwiftReduxTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -140,6 +145,7 @@
 		FF129E3828BF85A400C2B651 /* SwiftRedux */ = {
 			isa = PBXGroup;
 			children = (
+				FF129E6928BF948D00C2B651 /* Redux */,
 				FF129E3928BF85A400C2B651 /* AppDelegate.swift */,
 				FF129E3B28BF85A400C2B651 /* SceneDelegate.swift */,
 				FF129E3D28BF85A400C2B651 /* ViewController.swift */,
@@ -166,6 +172,16 @@
 				FF129E5C28BF85A600C2B651 /* SwiftReduxUITestsLaunchTests.swift */,
 			);
 			path = SwiftReduxUITests;
+			sourceTree = "<group>";
+		};
+		FF129E6928BF948D00C2B651 /* Redux */ = {
+			isa = PBXGroup;
+			children = (
+				FF129E6A28BF953A00C2B651 /* State.swift */,
+				FF129E6C28BF954100C2B651 /* Action.swift */,
+				FF129E6E28BF955100C2B651 /* Reducers.swift */,
+			);
+			path = Redux;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -407,9 +423,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF129E6F28BF955100C2B651 /* Reducers.swift in Sources */,
 				FF129E3E28BF85A400C2B651 /* ViewController.swift in Sources */,
 				FF129E3A28BF85A400C2B651 /* AppDelegate.swift in Sources */,
 				FF129E3C28BF85A400C2B651 /* SceneDelegate.swift in Sources */,
+				FF129E6D28BF954100C2B651 /* Action.swift in Sources */,
+				FF129E6B28BF953A00C2B651 /* State.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

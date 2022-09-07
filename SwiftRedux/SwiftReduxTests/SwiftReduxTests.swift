@@ -10,27 +10,35 @@ import XCTest
 
 class SwiftReduxTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
+  var vc: ViewController!
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
+  override func setUpWithError() throws {
+    vc = UIStoryboard(name: "Main", bundle:nil).instantiateViewController(withIdentifier: "ViewController") as? ViewController
+    vc.loadView()
+    vc.setup()
+  }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
-    }
+  override func tearDownWithError() throws {
+    // Put teardown code here. This method is called after the invocation of each test method in the class.
+  }
 
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+  func testExample() throws {
+
+    let expectation  =  expectation(description: "jhgjkfgf")
+    vc.rockButton(nil, compliction: {
+      expectation.fulfill()
+      let message = self.vc.messageString
+      XCTAssertEqual(message, "PLAYER 2 - Choose your weapon:", "Please check message string")
+    })
+    wait(for: [expectation], timeout: 10.0)
+
+  }
+
+  func testPerformanceExample() throws {
+    // This is an example of a performance test case.
+    self.measure {
+      // Put the code you want to measure the time of here.
     }
+  }
 
 }

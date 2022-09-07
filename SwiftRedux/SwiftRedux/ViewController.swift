@@ -18,6 +18,17 @@ class ViewController: UIViewController, StoreSubscriber{
   }
   }
 
+  var placeHolderFirst : String? { didSet {
+    self.placeholder1Lbl.text = placeHolderFirst
+  }
+  }
+
+  var placeHolderSecond : String? { didSet {
+    self.placeHolder2Lbl.text = placeHolderSecond
+  }
+  }
+
+  var appatcteCalled : (()->Void)?
   var complictionHandler : (()->Void)?
 
   override func viewDidLoad() {
@@ -29,7 +40,8 @@ class ViewController: UIViewController, StoreSubscriber{
     store.subscribe(self)
   }
 
-  @IBAction func rockButton(_ sender: Any?) {
+  @IBAction func rockButton(_ sender: Any?,  compliction: @escaping ()->Void) {
+    self.appatcteCalled = compliction
     store.dispatch(ChooseWeaponAction(weapon: .rock))
   }
 
@@ -44,12 +56,12 @@ class ViewController: UIViewController, StoreSubscriber{
   func newState(state: AppState) {
     messageString =  state.message.rawValue
     complictionHandler?()
-
+    appatcteCalled?()
     if state.playerSecondPlay.chosen {
-      placeholder1Lbl.text = state.playerFirstPlay.weapon?.rawValue
-      placeHolder2Lbl.text = state.playerSecondPlay.weapon?.rawValue
+      placeHolderFirst = state.playerFirstPlay.weapon?.rawValue
+      placeHolderSecond = state.playerSecondPlay.weapon?.rawValue
     } else {
-      placeholder1Lbl.text = state.playerFirstPlay.chosen ? "chosen" : ""
+      placeHolderFirst = state.playerFirstPlay.chosen ? "chosen" : ""
     }
   }
 }

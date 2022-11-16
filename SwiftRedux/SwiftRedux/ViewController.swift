@@ -40,10 +40,14 @@ class ViewController: UIViewController, StoreSubscriber{
     store.subscribe(self)
   }
 
-  @IBAction func rockButton(_ sender: Any?,  compliction: @escaping ()->Void) {
-    self.appatcteCalled = compliction
-    store.dispatch(ChooseWeaponAction(weapon: .rock))
-  }
+    @IBAction func rockButton(_ sender: Any?) {
+
+        //TODO: Remove this code for test cases
+        //    },  compliction: @escaping ()->Void) {
+        //    self.appatcteCalled = compliction
+
+        store.dispatch(ChooseWeaponAction(weapon: .rock))
+    }
 
   @IBAction func paperButton(_ sender: Any?) {
     store.dispatch(ChooseWeaponAction(weapon: .paper))
@@ -56,7 +60,7 @@ class ViewController: UIViewController, StoreSubscriber{
   func newState(state: AppState) {
     messageString =  state.message.rawValue
     complictionHandler?()
-    appatcteCalled?()
+//    appatcteCalled?()
     if state.playerSecondPlay.chosen {
       placeHolderFirst = state.playerFirstPlay.weapon?.rawValue
       placeHolderSecond = state.playerSecondPlay.weapon?.rawValue
